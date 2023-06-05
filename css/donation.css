@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap%27');
+@import url("hackathon.css");
+/* Using a url */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.donation {
+    padding: 20px 40px;
+    display: grid;
+    gap: 4vw;
+    background-color: #e6f8ef;
+    margin: 0 100px;
+}
+
+.donation-img {
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.donation .title {
+    grid-column: 2/3;
+}
+
+.donation-info {
+    grid-column: 2/3;
+}
+
+.description {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    margin: 20px 0;
+    color: var(--thirdcolor);
+}
+
+
+
+.donation-img img {
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+
+
+.donation .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 15px 0;
+
+}
+
+/* .donation-info {
+    margin-top: 20px;
+} */
+
+.donation-info .select-money {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.select-money div {
+    background-color: #eaead0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    color: #ff9822;
+    margin-right: 0.8rem;
+    margin-bottom: 0.8rem;
+}
+
+.amount {
+    display: flex;
+}
+
+.amount div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 0.8rem;
+    width: 20vw;
+    margin-right: 2px;
+}
+
+.form {
+    margin: 30px 0;
+}
+
+.form select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #838785;
+    margin-left: 10px;
+}
+
+.form .button input {
+    font-size: 0.8rem;
+    background-color: #ff9822;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+
+input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #deefe6;
+    margin-top: 10px;
+}
+
+.div-textarea {
+    display: flex;
+    flex-flow: wrap column;
+}
+
+textarea {
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    background-color: #deefe6;
+
+
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 12px;
+    margin-top: 20px;
+    width: 120px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.form>div {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 0.8rem;
+    padding: 10px 0;
+}
+
+
+/* Mobile */
+@media (max-width:768px) {
+    .donation {
+        display: block;
+        padding: 20px 40px;
+        margin: 0 20px;
+    }
+
+    .donation-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .description {
+        font-size: 0.7rem;
+        line-height: 0.9rem;
+    }
+
+    .donation .title {
+        font-size: 1.5rem;
+
+    }
+
+
+    .donation-info {
+        margin-top: 20px;
+    }
+
+    .donation-info .select-money {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .donation {
+        padding: 20px 40px;
+        margin: 0 40px;
+        display: grid;
+        gap: 4vw;
+    }
+
+    .donation-img {
+        grid-column: 1/5;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .donation .title {
+        grid-column: 5/6;
+    }
+
+    .donation-info {
+        grid-column: 5/6;
+    }
+
+    .description {
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+}
+
+/* ---------*** container-timing ***--------- */
+.prayer-timing {
+    font-size: 1.7rem;
+    margin: 20px 100px;
+    font-weight: 600;
+
+}
+
+.container-timing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    padding: 25px;
+
+    margin: 0 100px;
+    margin-bottom: 50px;
+}
+
+
+.container-timing .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 40px;
+
+}
+
+.container-timing .dec {
+    margin-bottom: 30px;
+    line-height: 2rem;
+    padding-right:20px ;
+}
+
+.salat {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3vw;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.title-head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-head div {
+    font-size: 0.9rem;
+}
+
+.head-img {
+    width: 2.5rem;
+    margin-bottom: 5px;
+}
+
+.times {
+    box-shadow: 0 0 3px 3px #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+@media (max-width:768px) {
+    .prayer-timing {
+        font-size: 1.7rem;
+        margin: 20px 20px;
+        font-weight: 600;
+
+    }
+
+    .container-timing {
+        display: block;
+        margin: 0 20px;
+        padding: 25px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+    }
+
+
+    .container-timing .title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+
+    }
+
+    .container-timing .dec {
+        margin-bottom: 30px;
+    }
+
+    .salat {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4vw;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    .title-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 20vw;
+    }
+
+    .title-head div {
+        font-size: 0.9rem;
+    }
+
+    .head-img {
+        width: 2.5rem;
+        margin-bottom: 5px;
+    }
+
+    .times {
+        box-shadow: 0 0 3px 3px #fcfcfc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .prayer-timing {
+        font-size: 2.2rem;
+        margin: 20px 40px;
+
+    }
+
+    .container-timing {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 40px;
+        margin-bottom: 50px;
+    }
+
+    .title-dec {
+        margin-right: 20px;
+        line-height: 2rem;
+    }
+
+
+    .container-timing .title {
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin-bottom: 15px;
+
+    }
+
+    .container-timing .dec {
+        margin-bottom: 30px;
+    }
+
+    .salat {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3vw;
+        background-color: #ffffff;
+        padding: 20px;
+    }
+
+    .title-head {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .title-head div {
+        font-size: 0.9rem;
+    }
+
+    .head-img {
+        width: 2.5rem;
+        margin-bottom: 5px;
+    }
+
+    .times {
+        box-shadow: 0 0 3px 3px #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        border-radius: 5px;
+
+    }
+
+}
